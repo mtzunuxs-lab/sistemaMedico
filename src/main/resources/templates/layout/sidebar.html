@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<div th:fragment="menuLateral" class="sidebar">
+    <h3>Mi Sistema</h3>
+    <hr style="border-color: #34495e;">
+    <ul>
+        <li>
+            <a th:href="@{/estudiantes}">🎓 Estudiantes</a>
+        </li>
+<!--        <li>-->
+<!--            <a th:href="@{/productos}">📦 Productos</a>-->
+<!--        </li>-->
+        <li>
+            <a href="#" class="disabled">👥 Usuarios (Próximamente)</a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
